@@ -1,0 +1,48 @@
+.page {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	height: 100vh;
+}
+
+.page__header {
+	box-sizing: border-box;
+	overflow-y: auto;
+  scrollbar-color: var(--color-grey) var(--color-lightgrey);
+  scrollbar-width: thin;
+
+	&::-webkit-scrollbar-track {
+		border: 3px solid var(--color-white);
+		background-color: var(--color-lightgrey);
+	}
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+		background-color: var(--color-lightgrey);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		border: none;
+		background-color: var(--color-grey);
+	}
+}
+
+.page__main {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 2rem;
+	overflow-y: scroll; // чтобы содержимое не скакало влево-вправо при быстрой смене страниц
+
+	@media @desktop {
+		padding: 2rem 4rem;
+	}
+}
+
+.page__title {
+	margin: 0 0 3rem;
+	padding: 0 0 1rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+	border-bottom: 1px solid var(--color-grey);
+}

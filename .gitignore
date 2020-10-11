@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.idea
+.vscode
+*.log
+*.map
+*.sublime*
+__MACOS*
+node_modules
+npm-debug.*
+public/css
+public/js
+Thumbs.db

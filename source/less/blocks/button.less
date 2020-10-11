@@ -1,0 +1,23 @@
+.button {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 9px 35px 11px;
+	text-decoration: none;
+	text-align: center;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+	border-radius: 4px;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		color: var(--color-primary);
+		background-color: var(--color-white);
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
